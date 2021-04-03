@@ -1,10 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "mylib.h"
 
 using namespace std;
-
 
 //#define TASK_1_5
 //#define TASK_2
@@ -13,6 +11,7 @@ using namespace std;
 
 #ifdef TASK_1_5
 #define SIZE_FLOAT_ARRAY 10
+#include "mylib.h"
 #endif
 
 #ifdef TASK_2
