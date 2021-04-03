@@ -7,7 +7,8 @@ namespace MyLib {
     void initArray(float *arr, const int size) {
         srand(time(0));
         for (int i = 0; i < size; ++i) {
-            arr[i] = ((float) (rand() % 10000) / (rand() % 100));
+            arr[i] = ((float) (rand() % 1000));
+            if(rand()%2 > 0) arr[i]  = -arr[i];
         }
     }
 
@@ -17,6 +18,7 @@ namespace MyLib {
             if (!(i % 10)) std::cout << std::endl;
             std::cout << arr[i] << " ";
         }
+        std::cout << std::endl;
     }
 
 
